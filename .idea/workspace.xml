@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96dc5ea-4f37-4eb6-a8f6-96048196f862" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +40,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/user-service-controller-service-sekeleton" />
+                    <option name="lastUsedInstant" value="1690143931" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/user-sevice-model" />
                     <option name="lastUsedInstant" value="1690143226" />
@@ -97,6 +103,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690132081827</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add user model">
+      <created>1690143687678</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690143687678</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
+    <MESSAGE value="add user model" />
+    <option name="LAST_COMMIT_MESSAGE" value="add user model" />
   </component>
 </project>
