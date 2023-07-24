@@ -4,3 +4,15 @@ server:
 spring:
   application:
     name: user-service
+  datasource:
+    username: telusmikolaj
+    password: admin
+    url: jdbc:postgresql://localhost:5432/user
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
