@@ -1,4 +1,8 @@
 package com.telus.codersplatform.userservice;
 
-public record UserRegistrationRequest(String username, String email, String password) {
+import lombok.Getter;
+
+@Getter
+public record UserRegistrationRequest(String email, String password) {
+
 }
