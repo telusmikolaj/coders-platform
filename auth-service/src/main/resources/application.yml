@@ -1,0 +1,51 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    username: telusmikolaj
+    password: admin
+    url: jdbc:postgresql://localhost:5432/auth-service
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          coders-platform-client:
+            client-id : coders-platform-client
+            scope : openid
+            authorization-grant-type : authorization_code
+        provider:
+          coders-platform-client:
+            issuer-uri: http://localhost:8081/auth/realms/coders-platform-realm
+            user-name-attribute: preferred_username
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/auth/realms/coders-platform-realm
+keycloak:
+  auth-server-url: http://localhost:8081/auth
+  realm: coders-platform-realm
+  client: coders-platform-client
+
+jwt:
+  auth:
+    converter:
+      resource-id: coders-platform-client
+      principle-attribute: preferred_username
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+      keycloak: DEBUG
