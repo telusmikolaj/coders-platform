@@ -4,32 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96dc5ea-4f37-4eb6-a8f6-96048196f862" name="Changes" comment="add auth-service and keycloak">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/AuthApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/JwtAuthConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/KeycloakLogoutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/model/UserLoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/JwtAuthConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/KeycloakLogoutHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="d96dc5ea-4f37-4eb6-a8f6-96048196f862" name="Changes" comment="Add registration and login handling with email verification in AuthService">
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/KeycloakProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/model/UserRegistrationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +45,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feature/auth-service-registration-and-login" />
+                    <option name="lastUsedInstant" value="1690975473" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="feature/auth-service-adding-keycloak" />
                     <option name="lastUsedInstant" value="1690830956" />
                   </RecentBranch>
@@ -77,10 +63,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feature/user-service-docker-compose" />
                     <option name="lastUsedInstant" value="1690145916" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feature/user-service-controller-service-sekeleton" />
-                    <option name="lastUsedInstant" value="1690143931" />
                   </RecentBranch>
                 </list>
               </option>
@@ -116,25 +98,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_opened_file_path": "/Users/mikolajtelus/Documents/Java/coders-platform/user-service/src/main/java/com/telus/codersplatform/userservice",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mikolajtelus/Documents/Java/coders-platform/user-service/src/main/java/com/telus/codersplatform/userservice&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -142,6 +124,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice" />
       <recent name="$PROJECT_DIR$/auth-service/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.telus.codersplatform.authservice.model" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AuthApplication">
@@ -253,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690145935520</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add auth-service and keycloak">
+      <created>1690831748517</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690831748517</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,14 +268,16 @@
     <MESSAGE value="add user model" />
     <MESSAGE value="add docker-compose.yml" />
     <MESSAGE value="add auth-service and keycloak" />
-    <option name="LAST_COMMIT_MESSAGE" value="add auth-service and keycloak" />
+    <MESSAGE value="&quot;Add registration and login handling with email verification in AuthService&quot;&#10;&#10;&quot;Add registration and login handling with email verification in AuthService&quot;&#10;&#10;&quot;Add registration and login handling with email verification in AuthService&quot;&#10;&#10;&quot;Add registration and login handling with email verification in AuthService&quot;&#10;&#10;&quot;Add registration and login handling with email verification in AuthService&quot;" />
+    <MESSAGE value="Add registration and login handling with email verification in AuthService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add registration and login handling with email verification in AuthService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java</url>
-          <line>20</line>
+          <line>18</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -292,40 +286,61 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/controller/AuthController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-admin-client/22.0.1/keycloak-admin-client-22.0.1.jar!/org/keycloak/admin/client/token/TokenManager.class</url>
-          <line>49</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-admin-client/22.0.1/keycloak-admin-client-22.0.1.jar!/org/keycloak/admin/client/token/TokenManager.class</url>
-          <line>46</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-admin-client/22.0.1/keycloak-admin-client-22.0.1.jar!/org/keycloak/admin/client/token/TokenManager.class</url>
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
           <line>58</line>
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-admin-client/22.0.1/keycloak-admin-client-22.0.1.jar!/org/keycloak/admin/client/token/TokenManager.class</url>
-          <line>57</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/keycloak/keycloak-admin-client/22.0.1/keycloak-admin-client-22.0.1.jar!/org/keycloak/admin/client/token/TokenManager.class</url>
-          <line>76</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.jboss.resteasy.client.jaxrs.internal.ResteasyClientImpl" memberName="configuration" />
+        <PinnedItemInfo parentTag="org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy" memberName="methodMap" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

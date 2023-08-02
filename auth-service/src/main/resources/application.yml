@@ -32,10 +32,14 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8081/auth/realms/coders-platform-realm
+
 keycloak:
   auth-server-url: http://localhost:8081/auth
   realm: coders-platform-realm
   client: coders-platform-client
+  admin:
+    username: 'telusmikolaj'
+    password: 'Samtelus77'
 
 jwt:
   auth:
