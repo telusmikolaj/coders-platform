@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96dc5ea-4f37-4eb6-a8f6-96048196f862" name="Changes" comment="Add registration and login handling with email verification in AuthService">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/KeycloakProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/model/UserRegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/ErrorMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -45,6 +42,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feature/auth-service-handle-login-and-registration-errors" />
+                    <option name="lastUsedInstant" value="1691149154" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="feature/auth-service-registration-and-login" />
                     <option name="lastUsedInstant" value="1690975473" />
                   </RecentBranch>
@@ -59,10 +60,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feature/user-service-connecting-database" />
                     <option name="lastUsedInstant" value="1690190972" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feature/user-service-docker-compose" />
-                    <option name="lastUsedInstant" value="1690145916" />
                   </RecentBranch>
                 </list>
               </option>
@@ -193,10 +190,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AuthApplication" />
-        <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.pgadmin: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -287,53 +284,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>101</line>
+          <line>102</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>164</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>67</line>
+          <line>68</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>58</line>
+          <line>59</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="65" />
+          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/controller/AuthController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="67" />
+          <line>95</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

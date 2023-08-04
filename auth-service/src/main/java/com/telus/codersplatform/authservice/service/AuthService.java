@@ -1,5 +1,6 @@
 package com.telus.codersplatform.authservice.service;
 
+import com.telus.codersplatform.authservice.config.ErrorMessages;
 import com.telus.codersplatform.authservice.config.KeycloakProvider;
 import com.telus.codersplatform.authservice.model.UserLoginRequest;
 import com.telus.codersplatform.authservice.model.UserRegistrationRequest;
@@ -69,7 +70,7 @@ public class AuthService {
             if (responseEntity.getStatusCode() == HttpStatus.OK) {
                 String userId = CreatedResponseUtil.getCreatedId(response);
                 sendVerificationMail(usersResource, userId);
-                assignUserRoles(usersResource, userId, USER_ROLES);
+                assignUserRoles(usersResource, userId);
                 return ResponseEntity.ok().build();
             } else {
                 return responseEntity;
@@ -86,17 +87,17 @@ public class AuthService {
         int status = response.getStatus();
         if (status == 400) {
             log.error("Error while creating user {}", "Bad request");
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Bad request");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ErrorMessages.BAD_REQUEST);
         } else if (status == 401) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized request");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(ErrorMessages.UNAUTHORIZED);
         } else if (status == 403) {
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Access denied");
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(ErrorMessages.FORBIDDEN);
         } else if (status == 409) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body("Email already in use");
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(ErrorMessages.CONFLICT);
         } else if (status == 500) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal server error");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ErrorMessages.INTERNAL_SERVER_ERROR);
         } else if (status != 201) {
-            throw new RuntimeException("Unable to create user");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ErrorMessages.UNEXPECTED_ERROR);
         }
 
         return ResponseEntity.ok().build();
@@ -111,11 +112,11 @@ public class AuthService {
 
         } catch (BadRequestException e) {
             log.error("Email has not been verified {}", loginRequest.email());
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Email has not been verified ");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ErrorMessages.EMAIL_NOT_VERIFIED);
         } catch (NotAuthorizedException e) {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(ErrorMessages.INVALID_CREDENTIALS);
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal server error");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ErrorMessages.INTERNAL_SERVER_ERROR);
         }
     }
 
