@@ -21,7 +21,7 @@ public class AuthController {
         return authService.createUser(registrationRequest);
 
     }
-
+    @CrossOrigin(origins = "*")
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody UserLoginRequest loginRequest) {
         try {
