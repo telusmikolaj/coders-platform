@@ -19,37 +19,13 @@ spring:
 
   security:
     oauth2:
-      client:
-        registration:
-          coders-platform-client:
-            client-id : coders-platform-client
-            scope : openid
-            authorization-grant-type : authorization_code
-        provider:
-          coders-platform-client:
-            issuer-uri: http://localhost:8081/auth/realms/coders-platform-realm
-            user-name-attribute: preferred_username
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8081/auth/realms/coders-platform-realm
-
-keycloak:
-  auth-server-url: http://localhost:8081/auth
-  realm: coders-platform-realm
-  client: coders-platform-client
-  admin:
-    username: 'telusmikolaj'
-    password: 'Samtelus77'
-
-jwt:
-  auth:
-    converter:
-      resource-id: coders-platform-client
-      principle-attribute: preferred_username
-
+          issuer-uri: http://localhost:8080/realms/coders-platform-realm
 logging:
   level:
     org:
       springframework:
         security: DEBUG
+        oauth2: DEBUG
       keycloak: DEBUG
