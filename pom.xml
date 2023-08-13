@@ -11,6 +11,8 @@
     <modules>
         <module>user-service</module>
         <module>auth-service</module>
+        <module>keycloak-event</module>
+        <module>ampq</module>
     </modules>
 
     <properties>

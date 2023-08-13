@@ -1,0 +1,5 @@
+
+rabbitmq:
+  host: rabbitmq_host
+  username: admin
+  password: admin

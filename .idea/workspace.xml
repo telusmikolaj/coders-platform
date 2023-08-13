@@ -4,26 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96dc5ea-4f37-4eb6-a8f6-96048196f862" name="Changes" comment="refactor all auth service">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/KeycloakRoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak/realm-export.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak/themes/keywind/keywind.jar" afterDir="false" />
+    <list default="true" id="d96dc5ea-4f37-4eb6-a8f6-96048196f862" name="Changes" comment="add keycloak registration event">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d0c4b3a8dfc063e90a173c2f6a402d8e13070a9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ampq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ampq/src/main/java/com/telus/codersplatform/AmpqApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ampq/src/main/java/com/telus/codersplatform/ampq/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ampq/src/main/java/com/telus/codersplatform/ampq/RabbitMQMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/ConfigLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/CustomEventListenerProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/CustomEventListenerProviderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/UserRegistrationMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/resources/META-INF/services/org.keycloak.events.EventListenerProviderFactory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/themes/keywind/keycloak-event-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/ErrorMessages.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/JwtAuthConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/KeycloakLogoutHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/KeycloakProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/model/UserLoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/model/UserRegistrationRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/service/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak/realm-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak/realm-export.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/JwtAuthConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/KeycloakLogoutHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/RestTemplateConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +54,8 @@
         <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,8 +77,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature/auth-service-keycloak-refactor" />
-                    <option name="lastUsedInstant" value="1691749623" />
+                    <option name="branchName" value="keycloak-registration-event" />
+                    <option name="lastUsedInstant" value="1691926330" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/auth-service-handle-login-and-registration-errors" />
@@ -124,6 +142,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
+    "last_directory_selection": "/Users/mikolajtelus/Documents/Java/coders-platform/ampq/src/main/java/com/telus/codersplatform",
     "last_opened_file_path": "/Users/mikolajtelus/Documents/Java/coders-platform/keycloak/themes/keywind",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
@@ -142,13 +161,18 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/keycloak/themes/keywind" />
+      <recent name="$PROJECT_DIR$/keycloak-event/src/main/resources/META-INF/services" />
+      <recent name="$PROJECT_DIR$/keycloak/events" />
       <recent name="$PROJECT_DIR$/keycloak" />
       <recent name="$PROJECT_DIR$/keycloak/themes/login/resources/img" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/keycloak-event/src/main/resources" />
       <recent name="$PROJECT_DIR$/keycloak/themes/keywind" />
+      <recent name="$PROJECT_DIR$/keycloak/themes" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.telus.codersplatform" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.telus.codersplatform.authservice.model" />
@@ -161,7 +185,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication">
+  <component name="RunManager" selected="Application.UserApplication">
+    <configuration name="UserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.telus.codersplatform.userservice.UserApplication" />
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.telus.codersplatform.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.telus.codersplatform.authservice.AuthApplication" />
@@ -209,26 +246,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.pgadmin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="pgadmin" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AuthApplication" />
+        <item itemvalue="Application.UserApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.AuthApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.pgadmin: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +267,7 @@
       <workItem from="1690130377795" duration="3463000" />
       <workItem from="1691399323908" duration="27725000" />
       <workItem from="1691740652811" duration="80000" />
-      <workItem from="1691740886511" duration="6226000" />
+      <workItem from="1691740886511" duration="29023000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1690131867267</created>
@@ -280,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690831748517</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor all auth service">
+      <created>1691749779277</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691749779277</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,20 +337,21 @@
     <MESSAGE value="&quot;Add registration and login handling with email verification in AuthService&quot;&#10;&#10;&quot;Add registration and login handling with email verification in AuthService&quot;&#10;&#10;&quot;Add registration and login handling with email verification in AuthService&quot;&#10;&#10;&quot;Add registration and login handling with email verification in AuthService&quot;&#10;&#10;&quot;Add registration and login handling with email verification in AuthService&quot;" />
     <MESSAGE value="Add registration and login handling with email verification in AuthService" />
     <MESSAGE value="refactor all auth service" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor all auth service" />
+    <MESSAGE value="add keycloak registration event" />
+    <option name="LAST_COMMIT_MESSAGE" value="add keycloak registration event" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/auth-service/src/main/java/com/telus/codersplatform/authservice/config/KeycloakRoleConverter.java</url>
           <line>25</line>
           <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserConsumer.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
