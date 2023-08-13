@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
@@ -16,4 +16,17 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  rabbitmq:
+    addresses: localhost:5672
+    username:  admin
+    password:  admin
+
+rabbitmq:
+  queue:
+    registration: user_registration_queue
+  exchanges:
+    internal: internal.exchange
+  routing-keys:
+    internal-registration: internal.notification.routing-key
+
 
