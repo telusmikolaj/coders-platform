@@ -72,6 +72,7 @@ public class CustomEventListenerProvider implements EventListenerProvider {
     private UserRegistrationMessage getUserRegistrationMessage(UserModel user) {
 
         return UserRegistrationMessage.builder()
+                .id(user.getId())
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
                 .email(user.getEmail())
