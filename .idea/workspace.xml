@@ -5,43 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96dc5ea-4f37-4eb6-a8f6-96048196f862" name="Changes" comment="add keycloak registration event">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d0c4b3a8dfc063e90a173c2f6a402d8e13070a9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ampq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ampq/src/main/java/com/telus/codersplatform/AmpqApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ampq/src/main/java/com/telus/codersplatform/ampq/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ampq/src/main/java/com/telus/codersplatform/ampq/RabbitMQMessageProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/ConfigLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/CustomEventListenerProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/CustomEventListenerProviderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/UserRegistrationMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/resources/META-INF/services/org.keycloak.events.EventListenerProviderFactory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-event/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak/themes/keywind/keycloak-event-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/mapper/UserRegistrationRequestMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/realm-export.json" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak/realm-export.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/CustomEventListenerProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/CustomEventListenerProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/UserRegistrationMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-event/src/main/java/com/telus/codersplatform/UserRegistrationMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak/themes/keywind/keycloak-event-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak/themes/keywind/keycloak-event-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/JwtAuthConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/KeycloakLogoutHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/RestTemplateConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/model/UserRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +28,9 @@
       <list>
         <option value="Enum" />
         <option value="Record" />
-        <option value="Interface" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -77,6 +52,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feature/user-service_user_mapper" />
+                    <option name="lastUsedInstant" value="1692198361" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="keycloak-registration-event" />
                     <option name="lastUsedInstant" value="1691926330" />
                   </RecentBranch>
@@ -91,10 +70,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feature/auth-service-adding-keycloak" />
                     <option name="lastUsedInstant" value="1690830956" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="develop" />
-                    <option name="lastUsedInstant" value="1690191096" />
                   </RecentBranch>
                 </list>
               </option>
@@ -116,7 +91,7 @@
     <option name="myId2Visible">
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -130,28 +105,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_directory_selection": "/Users/mikolajtelus/Documents/Java/coders-platform/ampq/src/main/java/com/telus/codersplatform",
-    "last_opened_file_path": "/Users/mikolajtelus/Documents/Java/coders-platform/keycloak/themes/keywind",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "fa4497027cc4d2e29c6a64e77eacd3e5"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-17&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/mikolajtelus/Documents/Java/coders-platform/ampq/src/main/java/com/telus/codersplatform&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mikolajtelus/Documents/Java/coders-platform/keycloak/themes/keywind&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fa4497027cc4d2e29c6a64e77eacd3e5&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -185,13 +160,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserApplication">
-    <configuration name="UserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.com.telus.codersplatform.userservice.UserApplication">
+    <configuration name="com.telus.codersplatform.userservice.UserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.telus.codersplatform.userservice.UserApplication" />
       <module name="user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.telus.codersplatform.userservice.*" />
+          <option name="PATTERN" value="com.telus.codersplatform.userservice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -248,7 +223,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserApplication" />
+        <item itemvalue="Application.com.telus.codersplatform.userservice.UserApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.AuthApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
@@ -350,7 +325,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserConsumer.java</url>
-          <line>16</line>
+          <line>19</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
