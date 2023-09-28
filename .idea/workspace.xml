@@ -5,29 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96dc5ea-4f37-4eb6-a8f6-96048196f862" name="Changes" comment="add flyaway and test containers">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ampq/ampq.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/auth-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coders-platform.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/initdb-scripts/create-databases.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/db/migration/V1__Initial_Setup.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/db/migration/V2__User_Table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/telus/codersplatform/userservice/AbstractDaoUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/telus/codersplatform/userservice/TestcontainersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/user-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d0c4b3a8dfc063e90a173c2f6a402d8e13070a9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/telus/codersplatform/userservice/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +278,7 @@
       <workItem from="1691740886511" duration="29023000" />
       <workItem from="1695367992546" duration="15079000" />
       <workItem from="1695890794162" duration="656000" />
-      <workItem from="1695891466708" duration="319000" />
+      <workItem from="1695891466708" duration="432000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1690131867267</created>
@@ -344,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691749779277</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add flyaway and test containers">
+      <option name="closed" value="true" />
+      <created>1695891874378</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695891874378</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +357,8 @@
     <MESSAGE value="Add registration and login handling with email verification in AuthService" />
     <MESSAGE value="refactor all auth service" />
     <MESSAGE value="add keycloak registration event" />
-    <option name="LAST_COMMIT_MESSAGE" value="add keycloak registration event" />
+    <MESSAGE value="add flyaway and test containers" />
+    <option name="LAST_COMMIT_MESSAGE" value="add flyaway and test containers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
